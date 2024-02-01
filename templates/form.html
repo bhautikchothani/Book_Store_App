@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Application</title>
+    
+</head>
+<body>
+
+    <h1>Welcome to the Book Application</h1>
+
+    <section>
+        <h2>Book List</h2>
+    </section>
+
+    <section>
+        <h2>Add a New Book</h2>
+        <form action="{{url_for('add_books')}}", method="POST">
+
+            <label for="id">id:</label>
+            <input type="text" id="id" name="id" required>
+            <br>
+
+
+            <label for="title">title:</label>
+            <input type="text" id="title" name="title" required>
+            <br>
+            <br>
+            <label for="author">author:</label>
+            <input type="text" id="author" name="author" required>
+            <br>
+            <br>
+            <label for="price">price:</label>
+            <input type="number" id="price" name="price" required>
+            <br>
+            <br>
+            <label for="year">year_published:</label>
+            <input type="number" id="year" name="year" required>
+            <br>
+            <br>
+            <input type="submit" value="Add Book">
+            <!-- onsubmit="add_books()" -->
+        </form>
+    </section>
+
+</body>
+</html>
