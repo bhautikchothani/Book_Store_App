@@ -83,7 +83,7 @@ books= [
          },
          ]
 #html form link #
-# fornt page #
+# frent page #
 @app.route('/',methods=['GET'])
 def index():
    return render_template("index.html",books=books)
@@ -124,7 +124,7 @@ def add_books():
        
 # GET method Uses#
 
-@app.route('/books', methods=["GET"])  #http://127.0.0.1:5000/get-book
+@app.route('/books', methods=["GET"])  #http://127.0.0.1:5000/books
 def get_all_book():
     return jsonify(list(books))
 
